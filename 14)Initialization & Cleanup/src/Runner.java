@@ -16,6 +16,6 @@ public class Runner {
         System.out.println(str2);
     }
     public static void main(String[] args) {
-        Runner.print();
+        print();
     }
 }

@@ -9,12 +9,9 @@ public class Tank {
     public  void fill(int a) {
         n += a;
     }
-    public void fill() {
-        n++;
-    }
-    public void emptie() {
+  /*  public void emptie() {
         n = 0;
-    }
+    }*/
     @Override
     protected void finalize(){
         if (n != 0) {
@@ -23,14 +20,5 @@ public class Tank {
         else{
             System.out.println("delete");
         }
-    }
-
-    public static void main(String[] args) {
-        new Tank().fill(10);
-        new Tank();
-        new Tank().fill();
-        new Tank().fill(100);
-        System.gc();
-
     }
 }
