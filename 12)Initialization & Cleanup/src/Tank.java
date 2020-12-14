@@ -7,11 +7,16 @@ that can occur when your Tank is used.
 public class Tank {
     private int n;
     public  void fill(int a) {
-        n += a;
+        if(a == 0){
+            n = 0;
+        }
+        else {
+            n+=0;
+        }
     }
-  /*  public void emptie() {
+    public void emptie() {
         n = 0;
-    }*/
+    }
     @Override
     protected void finalize(){
         if (n != 0) {
