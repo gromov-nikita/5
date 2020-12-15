@@ -11,7 +11,7 @@ public class Tank {
             n = 0;
         }
         else {
-            n+=0;
+            n+=a;
         }
     }
     public void emptie() {
